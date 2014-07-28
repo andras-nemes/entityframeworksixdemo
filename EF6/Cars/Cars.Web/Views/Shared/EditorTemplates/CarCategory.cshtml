@@ -1,0 +1,7 @@
+﻿@using Cars.Domain
+
+@{
+    var selectListItems = typeof(CarCategory).GetItemsAsSelectListItems((int?)Model);
+}
+
+@Html.DropDownList("", selectListItems)
